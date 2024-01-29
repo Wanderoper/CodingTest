@@ -52,7 +52,7 @@ public class DoIt_4_1_IntStack {
 			throw new EmptyIntStackException();
 		}
 		return stk[--ptr]; 
-		// 먼저 포인터 인덱스를 하나 감소시킨다 
+		// 먼저 포인터 인덱스를 하나 감소시켜야 해당 요소에 접근 할 수 있음  
 	}
 	
 	// peek 메서드
@@ -62,11 +62,12 @@ public class DoIt_4_1_IntStack {
 			throw new EmptyIntStackException();
 		}
 		return stk[ptr - 1];
+		// -- 는 실제ptr가 줄어들고 ptr - 1 은 ptr은 그대로이다 
 	}
 	
 	// clear 메서드
 	public void clear() {
-		ptr = 0; 
+		ptr = 0; // ptr만 0으로 바꿔주면 새로 요소가 채워지기 때문에 실제 배열을 clear 할필요가 없음 
 	}
 	
 	// stack 에서 검색하는 메서드
