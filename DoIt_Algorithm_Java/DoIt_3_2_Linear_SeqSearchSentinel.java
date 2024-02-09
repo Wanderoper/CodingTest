@@ -1,5 +1,7 @@
 // 선형검색 (보초법 Sentinel) 
 
+// 보초법을 쓰려면 배열 사이즈를 + 1 늘려주고 거기에 센티넬을 집어넣어줘서 판단횟수를 한번으로 줄인다 
+
 package DoIt_Algorithm_Practice;
 
 import java.util.Scanner;
