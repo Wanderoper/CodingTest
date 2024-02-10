@@ -9,20 +9,30 @@ import java.util.Scanner;
 public class DoIt_3_2_Linear_SeqSearchSentinel {
 	static int seqSearchSen(int num, int[] arr, int key) {
 		// while문 방법 
-		int i = 0;
-		
-		arr[num] = key; // 센티넬 추가 
-		
-		while (true) {
-			if (arr[i] == key) {
-				break;
-			}
-			i++;
-		}
-		
-		return ( i == num ? -1 : i ); 
+//		int i = 0;
+//		
+//		arr[num] = key; // 센티넬 추가 
+//		
+//		while (true) {
+//			if (arr[i] == key) {
+//				break;
+//			}
+//			i++;
+//		}
+//		
+//		return ( i == num ? -1 : i ); 
 		
 		// for문 방법 
+		arr[num] = key;
+		
+		int i = 0;
+		for( ; i <= arr.length; i++) {
+			if (arr[i] == key) {
+				
+				break;
+			}
+		}	
+		return ( i == num ? -1 : i );
 	}
 
 	// main method 
