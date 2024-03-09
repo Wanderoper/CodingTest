@@ -1,0 +1,11 @@
+-- ORACLE 
+
+SELECT BOOK_ID, 
+       TO_CHAR(PUBLISHED_DATE, 'YYYY-MM-DD') AS PUBLISHED_DATE
+  FROM BOOK
+ WHERE TO_CHAR(PUBLISHED_DATE, 'YYYY') = 2021
+   AND CATEGORY IN ('인문')
+ ORDER BY
+       PUBLISHED_DATE;
+
+-- ORACLE에서는 date_format 이 아닌 to_char / to_date 문을 사용함
