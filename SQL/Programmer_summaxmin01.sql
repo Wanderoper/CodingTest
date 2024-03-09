@@ -1,0 +1,5 @@
+-- ORACLE
+-- MAX() 문 사용 단순 문제
+
+SELECT MAX(PRICE) MAX_PRICE
+  FROM PRODUCT;
