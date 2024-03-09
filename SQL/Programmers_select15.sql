@@ -1,0 +1,8 @@
+-- ORACLE 
+-- 간단한 정렬, 검색조건 문제
+
+SELECT ANIMAL_ID, NAME
+  FROM ANIMAL_INS
+ WHERE INTAKE_CONDITION = 'Sick'
+ ORDER BY
+       ANIMAL_ID ASC;
