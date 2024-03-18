@@ -24,3 +24,8 @@ SELECT EXTRACT(MONTH FROM START_DATE) MONTH,
 HAVING COUNT(*) <> 0
  ORDER BY
        MONTH ASC, CAR_ID DESC;
+
+-- 배운 것 : 
+-- GROUP BY 를 한 상태에서의 count(*)의 의미 
+-- extract(날짜 from 컬럼) 함수
+-- 가독성 있는 조건 설정법 ex) 1 <= 컬럼 and 컬럼 < 10 
